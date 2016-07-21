@@ -42,7 +42,7 @@ php composer update
             'sandbox' => false,
             'language' => 'ru',
             'result_url' => '/page/thanks',
-            'paymentName' => 'Оплата заказа Холодильника',
+            'paymentName' => 'Оплата заказа',
         ],
         //...
     ],
