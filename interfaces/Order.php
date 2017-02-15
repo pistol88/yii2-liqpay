@@ -1,5 +1,5 @@
 <?php
-namespace pistol88\order\interfaces;
+namespace pistol88\liqpay\interfaces;
 
 interface Order
 {
