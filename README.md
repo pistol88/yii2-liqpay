@@ -49,14 +49,6 @@ php composer update
     ],
 ```
 
-В сервисный слой (components) добавляем модель своего заказа (в случае с pistol88\order - не обязательно):
-```php
-    'components' => [
-        'orderModel' => ['class' => 'pistol88\order\models\Order'],
-        //...
-    ],
-```
-
 Виджеты
 ---------------------------------
 За вывод формы оплаты отвечает виджет pistol88\liqpay\widgets\PaymentForm.
