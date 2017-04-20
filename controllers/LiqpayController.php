@@ -9,7 +9,7 @@ class LiqpayController extends Controller
 {
     public function beforeAction($action)
     {            
-        if ($action->id == 'my-method') {
+        if ($action->id == 'payment') {
             $this->enableCsrfValidation = false;
         }
 
@@ -27,8 +27,8 @@ class LiqpayController extends Controller
     }
     
     function actionPayment($model)
-	{
-        $orderModel = yii::$app->orderModel;
+    {
+        $orderModel = $this->module->orderModel;
         $orderModel = $orderModel::findOne($model->order_id);
 
         if(!$orderModel) {
