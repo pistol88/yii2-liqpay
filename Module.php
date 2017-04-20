@@ -17,6 +17,7 @@ class Module extends \yii\base\Module
     public $paymentName;
     public $currency;
     public $pay_way;
+    public $orderModel = 'pistol88\order\models\Order';
     
     public $thanksUrl = '/page/spasibo-za-zakaz';
     public $failUrl = '/page/problema-s-oplatoy';
